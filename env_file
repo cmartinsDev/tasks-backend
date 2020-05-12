@@ -1,0 +1,4 @@
+// renomear para .env smartinsoft
+module.exports = {
+  authSecret: ''
+}

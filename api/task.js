@@ -4,6 +4,7 @@ module.exports = app => {
   const getTasks = (req, res) => {
     const date = req.query.date ? req.query.date : moment().endOf('day').toDate()
 
+    console.log(`date: ${date}`)
     app.database('tasks').where({ userId: req.user.id })
                          .where('estimateAt', '<=', date)
                          .orderBy('estimateAt')

@@ -11,7 +11,7 @@ module.exports = app => {
     const user = await app.database('users')
                           .where({email: req.body.email.toLowerCase()})
                           .first()
-    console.log(`User: ${user}`)
+    console.log(user)
     if (user) {
       bcrypt.compare(req.body.password, user.password, (err, isMatch) => {
         if (err || !isMatch) {

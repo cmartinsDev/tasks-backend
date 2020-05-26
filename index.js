@@ -15,6 +15,7 @@ consign()
 
 app.database = database
 
-app.listen(4000, () => {
-  console.log('Server is up and listening on 4000')
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => {
+  console.log(`Tasks-backend is up and listening on ${PORT}`)
 })

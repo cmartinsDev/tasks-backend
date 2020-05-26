@@ -15,6 +15,6 @@ consign()
 
 app.database = database
 
-app.listen(80, () => {
-  console.log('Backend executando !!!')
+app.listen(4000, () => {
+  console.log('Server is up and listening on 4000')
 })

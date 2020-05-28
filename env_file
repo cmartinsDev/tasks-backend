@@ -1,4 +1,4 @@
-// renomear para .env smartinsoft
+// renomear para .env Tasks-backend
 module.exports = {
   authSecret: ''
 }
